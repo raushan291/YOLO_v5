@@ -1,2 +1,3 @@
-python train.py --img 640 --batch 8 --epochs 30 --data ./data/elephant.yaml --cfg ./models/yolov5s.yaml --weights ./models/yolov5s.yaml --device "cpu"
+# python train.py --img 640 --batch 8 --epochs 30 --data ./data/elephant.yaml --cfg ./models/yolov5s.yaml --weights ./models/yolov5s.yaml --device "cpu"
+python train.py --img 640 --batch 8 --epochs 30 --data ./data/elephant.yaml --cfg ./models/yolov5s.yaml --weights ./weights/yolov5s-fpn.pt --device "cpu"
 python detect.py --source ./sample_img.jpg  --weights ./weights_elephant/last.pt --conf 0.4
