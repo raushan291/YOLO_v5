@@ -1,3 +1,7 @@
 # python train.py --img 640 --batch 8 --epochs 30 --data ./data/elephant.yaml --cfg ./models/yolov5s.yaml --weights ./models/yolov5s.yaml --device "cpu"
 python train.py --img 640 --batch 8 --epochs 30 --data ./data/elephant.yaml --cfg ./models/yolov5s.yaml --weights ./weights/yolov5s-fpn.pt --device "cpu"
 python detect.py --source ./sample_img.jpg  --weights ./weights_elephant/last.pt --conf 0.4
+
+NOTE : ==>
+      (1) --img (i.e, img-size argument) should be multiple of 32. for e.g, 192, 640, etc...
+      (2) detect.py script can also take --img option.(By default it is set to 640x640 img-size)
